@@ -10,6 +10,16 @@ body {
   margin: 8px;
 }
 
+div {
+  display: block;
+}
+
+div[role="container"] {
+  width: 950px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
 #logo a {
   color: #222;
   font-size: 46px;
@@ -20,3 +30,5 @@ body {
 a:link {
   text-decoration: none;
 }
+
+
