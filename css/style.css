@@ -9,3 +9,14 @@ body {
   display: block;
   margin: 8px;
 }
+
+#logo a {
+  color: #222;
+  font-size: 46px;
+  font-family: "BebasNeueRegular","Hevetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: normal;
+}
+
+a:link {
+  text-decoration: none;
+}
