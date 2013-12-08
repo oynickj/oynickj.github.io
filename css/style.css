@@ -1,3 +1,11 @@
 body {
-  background-image: url('../images/site_background.png')
+  background-image: url('../images/site_background.png');
+  padding: 3em 10px;
+  text-shadow: 0 1px 1px #eee;
+  color: #222220; !important;
+  line-height: 1.5;
+  font-family: "Helvetica Neue",Arial,Helvetica,sans-serif;
+  font-size: 75%;
+  display: block;
+  margin: 8px;
 }
