@@ -25,6 +25,8 @@ div[role="container"] {
   font-size: 42px;
   font-family: "BebasNeueRegular","Hevetica Neue",Helvetica,Arial,sans-serif;
   font-weight: normal;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 a:link {
