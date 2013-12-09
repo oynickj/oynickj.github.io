@@ -18,6 +18,7 @@ div[role="container"] {
   width: 950px;
   margin: 0 auto;
   overflow: hidden;
+  word-wrap: break-word;
 }
 
 #logo a {
