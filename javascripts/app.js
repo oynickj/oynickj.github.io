@@ -1,10 +1,16 @@
 $(document).ready(function(){
 
-  // jquery global event
-$(document).on("ajaxStart", function(){
-  console.log("ajax start");
+  $("#projects").on("click", function(e){
+    e.preventDefault();
+    $.ajax({
+      // local event
+      success: function(){
+        console.log('it worked');
+      },
+      url: "https://api.github.com/users/oynickj/repos"
+    });
+  })
+
+
+
 });
-
-
-
-})
