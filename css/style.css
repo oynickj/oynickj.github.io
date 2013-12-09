@@ -40,3 +40,10 @@ a:link {
 ul {
   list-style: none;
 }
+
+footer {
+  clear: both;
+  border-top: 1px #e9e9e9 solid;
+  margin-top: 1em;
+  padding-top: 3em;
+}
