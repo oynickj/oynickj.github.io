@@ -53,3 +53,9 @@ footer {
   padding-top: 2em;
   font-size: 14px;
 }
+
+.screenshot {
+  width: 75%;
+  borer: 1px solid grey;
+  margin: 0 0 5px 0;
+}
