@@ -4,8 +4,18 @@ $(document).ready(function(){
     e.preventDefault();
     $.ajax({
       // local event
-      success: function(){
-        console.log('it worked');
+      beforeSend: function(){
+        $("#repos").addClass("loading")
+      },
+      success: function(response){
+        $.each(response, function(index, repo){
+          $("#repos").append('<ul>');
+          $("#repos").find('ul').append('<li>' + repo.name + '</li>');
+          console.log(repo.name);
+          });
+      },
+      complete: function(){
+        $("#repos").removeClass("loading")
       },
       url: "https://api.github.com/users/oynickj/repos"
     });

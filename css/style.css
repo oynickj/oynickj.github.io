@@ -1,5 +1,5 @@
 body {
-  background-image: url('../images/site_background.png');
+  background: url('../images/site_background.png');
   padding: 3em 10px;
   text-shadow: 0 1px 1px #eee;
   color: #222220; !important;
@@ -19,6 +19,10 @@ div[role="container"] {
   max-width: fill-available;
   margin: 0 auto;
   overflow: hidden;
+}
+
+.loading {
+  background: url('../images/ajax-loader.gif') no-repeat;
 }
 
 #logo a {
