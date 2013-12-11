@@ -2,7 +2,20 @@ $(document).ready(function(){
 
 
 
+  $("#about_me_nav").on("click", function(e){
+    e.preventDefault();
+    $(this).addClass("strong");
+  });
 
+  $("#selected_projects_nav").on("click", function(e){
+    e.preventDefault();
+    $(this).addClass("strong");
+  });
+
+  $("#contact_nav").on("click", function(e){
+    e.preventDefault();
+    $(this).addClass("strong");
+  });
 
 
 

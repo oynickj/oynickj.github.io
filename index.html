@@ -1,10 +1,15 @@
 <!DOCTYPE html>
 <html>
   <head>
+
     <meta charset="utf-8">
-    <title>Josh Oynick</title>
+    <meta htp-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="My web auto-bio.">
     <meta name="author" content="Josh Oynick">
+
+    <title>Josh Oynick</title>
+
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <style>
       [touch-action="none"]{ -ms-touch-action: none; touch-action: none; }[touch-action="pan-x"]{ -ms-touch-action: pan-x; touch-action: pan-x; }[touch-action="pan-y"]{ -ms-touch-action: pan-y; touch-action: pan-y; }[touch-action="scroll"],[touch-action="pan-x pan-y"],[touch-action="pan-y pan-x"]{ -ms-touch-action: pan-x pan-y; touch-action: pan-x pan-y; }
@@ -20,14 +25,17 @@
           </h1>
         </div>
       </header>
+      <div>
+        <ul class="navigation">
+          <li><a href="#" id="about_me_nav"> about me </a></li>
+          <li><a href="#" id="selected_projects_nav"> selected projects </a></li>
+          <li><a href="#" id="contact_nav">contact</a></li>
+        </ul>
+      </div>
+    </br>
       <div id="main" role="main">
         <section id="archive">
-          <article>
-            <header>
-              <h1>
-                <a> about me  |  selected projects  |  contact </a>
-              </h1>
-            </header>
+          <div id="about_me">
             <p>
               Hey! Thanks for stopping by. I am a <a href="https://github.com/oynickj" target="_blank">developer</a>, <a href="https://foursquare.com/oynickj" target="_blank">borough adventurer</a>, <a href="http://www.goodreads.com/user/show/23636412-josh-oynick" target="_blank">lifelong student</a>, and believer that the most important things in life are to <a href="http://www.brainyquote.com/quotes/authors/c/conan_obrien.html" target="_blank">work hard and be kind</a>.
             </p>
@@ -40,22 +48,17 @@
             <p>
               I graduated from the University of Pennsylvania's Wharton School in 2011 with concentrations in Finance and Operations and Information Management. At Penn, I was in a musical comedy group called the <a href="http://www.maskandwig.com/" target="_blank">Mask and Wig Club</a> where I performed in the cast and played drums, guitar, keys, and sometimes the shaker in the band.
             </p>
-          </article>
-          <article>
-            <header>
-              <h1>
-                <a id="projects">selected projects</a>
-              </h1>
-            </header>
+          </div>
+          <div id="selected_projects">
             <div class="project">
               <img src="images/getadilla.png" alt="getadilla" class="screenshot">
-              <p>Getadilla, my first project, is an online ordering portal for a quesadilla restaurant. The app is built with Rails and incorporates login and authentication, as well as Google's Translate functionality.</p>
+              <p>Getadilla, my first project, is an online ordering portal for a quesadilla restaurant. The app is built with Rails and incorporates login and authentication, as well as Google Translate functionality.</p>
             </div>
             <div class="project">
               <img src="images/granulr.png" alt="granulr" class="screenshot">
               <p> Granulr is group project created during General Assembly's Web Development Immersive program. Built with Javascript, Ruby, and Rails, Granulr facilitates goal setting and achievement through a "user stories" model and allows users to break down large goals into specific, actionable tasks. </p>
             </div>
-          </article>
+          </div>
         </section>
       </div>
       <footer>

@@ -59,3 +59,9 @@ footer {
   borer: 1px solid grey;
   margin: 0 0 5px 0;
 }
+
+ul.navigation { list-style: none; color: inherit; text-decoration: none; padding: 0px;}
+ul.navigation li { float: left; display: table-cell; border-right: 1px solid black; padding: 0px 10px;}
+ul.navigation li.strong { font-weight: bold; }
+
+#about_me_nav { padding: 0px; margin: 0px;}
