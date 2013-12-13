@@ -36,6 +36,7 @@ div[role="container"] {
 
 a:link {
   text-decoration: none;
+  color: black;
 }
 
 .clearfix {
@@ -60,8 +61,29 @@ footer {
   margin: 0 0 5px 0;
 }
 
-ul.navigation { list-style: none; color: inherit; text-decoration: none; padding: 0px;}
-ul.navigation li { float: left; display: table-cell; border-right: 1px solid black; padding: 0px 10px;}
-ul.navigation li.strong { font-weight: bold; }
+.navigation { list-style: none; color: inherit; text-decoration: none; padding: 0px;}
+.navigation li { display: inline-block; border-right: 1px solid black; padding: 0px 10px;}
+.navigation li:first-child{ padding-left: 0px;}
+
+.navigation .active { font-weight: bold; }
 
 #about_me_nav { padding: 0px; margin: 0px;}
+
+.tab_content {
+  display: none;
+  padding-top: 20px;
+
+}
+
+.tab_content.tab_active {
+  display: block;
+
+}
+
+.tab_content p:first-child{
+  margin-top: 0;
+}
+
+.tab a {
+  display: inline-block;
+}

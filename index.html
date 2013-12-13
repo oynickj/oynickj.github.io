@@ -1,75 +1,83 @@
+
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
 
-    <meta charset="utf-8">
-    <meta htp-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="My web auto-bio.">
-    <meta name="author" content="Josh Oynick">
+  <meta charset="utf-8">
+  <meta htp-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="My web auto-bio.">
+  <meta name="author" content="Josh Oynick">
 
-    <title>Josh Oynick</title>
+  <title>Josh Oynick</title>
 
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
-    <style>
-      [touch-action="none"]{ -ms-touch-action: none; touch-action: none; }[touch-action="pan-x"]{ -ms-touch-action: pan-x; touch-action: pan-x; }[touch-action="pan-y"]{ -ms-touch-action: pan-y; touch-action: pan-y; }[touch-action="scroll"],[touch-action="pan-x pan-y"],[touch-action="pan-y pan-x"]{ -ms-touch-action: pan-x pan-y; touch-action: pan-x pan-y; }
-    </style>
-  </head>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <style>
+  [touch-action="none"]{ -ms-touch-action: none; touch-action: none; }[touch-action="pan-x"]{ -ms-touch-action: pan-x; touch-action: pan-x; }[touch-action="pan-y"]{ -ms-touch-action: pan-y; touch-action: pan-y; }[touch-action="scroll"],[touch-action="pan-x pan-y"],[touch-action="pan-y pan-x"]{ -ms-touch-action: pan-x pan-y; touch-action: pan-x pan-y; }
+  </style>
+</head>
 
-  <body>
-    <div role="container">
-      <header>
-        <div id="logo">
-          <h1>
-            <a href="/"><strong>Josh Oynick</strong></a>
-          </h1>
-        </div>
-      </header>
-      <div>
-        <ul class="navigation">
-          <li><a href="#" id="about_me_nav"> about me </a></li>
-          <li><a href="#" id="selected_projects_nav"> selected projects </a></li>
-          <li><a href="#" id="contact_nav">contact</a></li>
-        </ul>
+<body>
+  <div role="container">
+    <header>
+      <div id="logo">
+        <h1>
+          <a href="/"><strong>Josh Oynick</strong></a>
+        </h1>
       </div>
-    </br>
-      <div id="main" role="main">
-        <section id="archive">
-          <div id="about_me">
-            <p>
-              Hey! Thanks for stopping by. I am a <a href="https://github.com/oynickj" target="_blank">developer</a>, <a href="https://foursquare.com/oynickj" target="_blank">borough adventurer</a>, <a href="http://www.goodreads.com/user/show/23636412-josh-oynick" target="_blank">lifelong student</a>, and believer that the most important things in life are to <a href="http://www.brainyquote.com/quotes/authors/c/conan_obrien.html" target="_blank">work hard and be kind</a>.
-            </p>
-            <p>
-              My journey as a developer began in the fall of 2013, when I enrolled in General Assembly's <a href="https://generalassemb.ly/education/web-development-immersive" target="_blank">Web Development Immersive</a> program.
-            </p>
-            <p>
-              Before that, I was an investment banking analyst at UBS and Greentech Capital Advisors, where I worked with companies in the renewable energy and infrastructure sectors.
-            </p>
-            <p>
-              I graduated from the University of Pennsylvania's Wharton School in 2011 with concentrations in Finance and Operations and Information Management. At Penn, I was in a musical comedy group called the <a href="http://www.maskandwig.com/" target="_blank">Mask and Wig Club</a> where I performed in the cast and played drums, guitar, keys, and sometimes the shaker in the band.
-            </p>
-          </div>
-          <div id="selected_projects">
-            <div class="project">
-              <img src="images/getadilla.png" alt="getadilla" class="screenshot">
-              <p>Getadilla, my first project, is an online ordering portal for a quesadilla restaurant. The app is built with Rails and incorporates login and authentication, as well as Google Translate functionality.</p>
-            </div>
-            <div class="project">
-              <img src="images/granulr.png" alt="granulr" class="screenshot">
-              <p> Granulr is group project created during General Assembly's Web Development Immersive program. Built with Javascript, Ruby, and Rails, Granulr facilitates goal setting and achievement through a "user stories" model and allows users to break down large goals into specific, actionable tasks. </p>
-            </div>
-          </div>
-        </section>
-      </div>
-      <footer>
-        <section class="credits">
-          <p>
-            Created by <a href="https://twitter.com/oynickj" target="_blank">@oynickj</a>
-          </p>
-        </section>
-      </footer>
+    </header>
+    <div>
+      <ul class="navigation">
+        <li class="tab active"><a href="#about_me"> about me </a></li>
+        <li class="tab"><a href="#selected_projects"> selected projects </a></li>
+        <li class="tab"><a href="#contact">contact</a></li>
+      </ul>
     </div>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script src="javascripts/app.js"></script>
-  </body>
-  </html>
+  <div id="main" role="main">
+    <section id="archive">
+      <div id="content">
+        <div id="about_me" class="tab_content tab_active">
+          <p>
+            Hey! Thanks for stopping by. I'm Josh and this is my personal page. I was born and raised in Sarasota, Florida and am now based in NYC. I'm a <a href="https://github.com/oynickj" target="_blank">developer</a>, <a href="https://foursquare.com/oynickj" target="_blank">borough adventurer</a>, <a href="http://www.goodreads.com/user/show/23636412-josh-oynick" target="_blank">lifelong student</a>, and believer that the most important things in life are to <a href="http://www.brainyquote.com/quotes/authors/c/conan_obrien.html" target="_blank">work hard and be kind</a>.
+          </p>
+          <p>
+            My journey as a developer began in the fall of 2013, when I enrolled in General Assembly's <a href="https://generalassemb.ly/education/web-development-immersive" target="_blank">Web Development Immersive</a> program.
+          </p>
+          <p>
+            Before that, I was an investment banking analyst at UBS and Greentech Capital Advisors, where I worked with companies in the renewable energy and infrastructure sectors.
+          </p>
+          <p>
+            I graduated from the University of Pennsylvania's Wharton School in 2011 with concentrations in Finance and Operations and Information Management. At Penn, I was in a musical comedy group called the <a href="http://www.maskandwig.com/" target="_blank">Mask and Wig Club</a> where I performed in the cast and played drums, guitar, keys, and sometimes the shaker in the band.
+          </p>
+        </div>
+        <div id="selected_projects" class="tab_content">
+          <div class="project">
+            <img src="images/getadilla.png" alt="getadilla" class="screenshot">
+            <p>Getadilla, my first project, is an online ordering portal for a quesadilla restaurant. The app is built with Rails and incorporates login and authentication, as well as Google Translate functionality.</p>
+          </div>
+          <div class="project">
+            <img src="images/granulr.png" alt="granulr" class="screenshot">
+            <p> Granulr is group project created during General Assembly's Web Development Immersive program. Built with Javascript, Ruby, and Rails, Granulr facilitates goal setting and achievement through a "user stories" model and allows users to break down large goals into specific, actionable tasks. </p>
+          </div>
+        </div>
+        <div id="contact" class="tab_content">
+          Feel free to contact me at oynickj@gmail.com, and you can find me on twitter <a href="https://twitter.com/oynickj" target="_blank">@oynickj</a>.
+      </p>
+        </div>
+      </div>
+    </section>
+  </div>
+  <footer>
+    <section class="credits">
+      <p>
+        Created by <a href="https://twitter.com/oynickj" target="_blank">@oynickj</a>
+      </p>
+    </section>
+  </footer>
+</div>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="javascripts/app.js"></script>
+</body>
+</html>

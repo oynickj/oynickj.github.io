@@ -1,22 +1,29 @@
 $(document).ready(function(){
 
+//   $("#about_me_nav").on("click", function(e){
+//     e.preventDefault();
+//     $.ajax({
+//       url: "about_me.html",
+//       success: function(content) {
+//         debugger;
+//       }
+//     });
+//   });
 
-
-  $("#about_me_nav").on("click", function(e){
+// nave bar bolding/unbolding and add/remove sections
+  $(".tab").on("click", function(e){
     e.preventDefault();
-    $(this).addClass("strong");
+    $(this).parents("ul").children("li").removeClass("active");
+    $(this).addClass("active");
+    // add and remove sections
+    $("#content .tab_active").removeClass("tab_active");
+    var activate_tab = $(this).find("a").attr("href");
+    $(activate_tab).addClass("tab_active");
+    // console.log($(this).find("a").attr("href"));
+
   });
 
-  $("#selected_projects_nav").on("click", function(e){
-    e.preventDefault();
-    $(this).addClass("strong");
-  });
-
-  $("#contact_nav").on("click", function(e){
-    e.preventDefault();
-    $(this).addClass("strong");
-  });
-
+  // todo: fix movement to top of page on click of contact
 
 
   // $("#projects").on("click", function(e){
