@@ -49,7 +49,7 @@ ul {
 
 footer {
   clear: both;
-  border-top: 1px #e9e9e9 solid;
+  border-top: 1px grey solid;
   margin-top: 1em;
   padding-top: 2em;
   font-size: 14px;
@@ -86,4 +86,8 @@ footer {
 
 .tab a {
   display: inline-block;
+}
+
+.description {
+  padding-bottom: 15px;
 }
